@@ -22,7 +22,7 @@ module.exports.handler = async (event) => {
     await dynamoDb.put(params).promise();
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: 'Order created successfully!!!!', OrderId: orderId })
+      body: JSON.stringify({ message: 'Order created successfully!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!', OrderId: orderId })
     };
   } catch (error) {
     return {
